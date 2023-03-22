@@ -1,0 +1,6 @@
+# run = "cowsay Configure me!"
+run = "npm run dev"
+run="python  server.py "
+
+[nix]
+channel = "stable-22_11"

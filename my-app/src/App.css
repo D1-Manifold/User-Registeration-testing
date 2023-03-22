@@ -1,84 +1,78 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #f4f4f4;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.register-form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
-
-.register-form-container h2 {
-  margin-bottom: 1rem;
-}
-
-.form-input-container {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-}
-
-.form-input-container label {
-  margin-bottom: 0.5rem;
-}
-
-.form-input-container input {
-  padding: 0.5rem;
+.register-form {
+  background-color: #fff;
+  padding: 2rem;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
 }
 
-.form-submit-button {
+.register-form h2 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control {
+  font-size: 1rem;
   padding: 0.5rem 1rem;
-  border-radius: 5px;
-  border: none;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
+  border: 1px solid #ccc;
+border-radius: 5px;
+width: 94%;
+margin-bottom: 1rem;
 }
 
-.form-submit-button:hover {
-  background-color: #0069d9;
+.form-control:focus {
+border-color: #007bff;
+box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.error-message {
-  color: red;
-  margin-top: 0.5rem;
+.form-group label {
+font-size: 0.9rem;
+color: #555;
+margin-bottom: 0.5rem;
+display: block;
+}
+
+.btn {
+font-size: 1rem;
+padding: 0.5rem 1rem;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.btn-primary {
+background-color: #007bff;
+border: none;
+color: #fff;
+}
+
+.btn-primary:hover {
+background-color: #0056b3;
+}
+
+.btn-block {
+width: 101%;
+}
+
+.alert-danger {
+font-size: 0.9rem;
+padding: 0.5rem 1rem;
+background-color: #f8d7da;
+color: #721c24;
+border: 1px solid #f5c6cb;
+border-radius: 5px;
+margin-bottom: 1rem;
+}
+.text-center{
+  text-align:center !important;
 }
